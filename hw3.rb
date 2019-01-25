@@ -1,9 +1,5 @@
 fibonachi_array = [0, 1]
-loop do
-  next_number = fibonachi_array[-2] + fibonachi_array[-1]
-  break if next_number > 100
-  fibonachi_array << next_number
-end
+next_number = 0 
+fibonachi_array << next_number while (next_number = fibonachi_array[-2] + fibonachi_array[-1]) < 100
 
 puts fibonachi_array
-
